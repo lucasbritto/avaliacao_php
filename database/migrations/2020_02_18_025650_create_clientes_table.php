@@ -21,7 +21,7 @@ class CreateClientesTable extends Migration
             $table->date('nascimento');
             $table->String('telefone');
             $table->String('cidade');
-            $table->String('user_atualizacao');            
+            $table->String('user_atualizacao')->nullable();            
             $table->String('user_cadastro');
             $table->timestamps();
         });
